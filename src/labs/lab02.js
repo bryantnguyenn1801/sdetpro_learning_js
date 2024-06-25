@@ -9,9 +9,9 @@ function returnBMIStatus(bmiValue) {
     console.log("BMI status:");
     if (bmiValue < 18.5) {
         console.log("Underweight");
-    } else if (bmiValue >= 18.5 && bmiValue <= 24.9) {
+    } else if (bmiValue <= 24.9) {
         console.log("Normal weight");
-    } else if (bmiValue >= 25 && bmiValue <= 29.9) {
+    } else if (bmiValue <= 29.9) {
         console.log("Overweight");
     } else {
         console.log("Obesity");
