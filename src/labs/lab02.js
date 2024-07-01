@@ -29,10 +29,10 @@ function checkEvenOrOddNumber(number) {
 function giveSuggestion(bmiNumber, currentHeight) {
     console.log("Suggestion for you:");
     if (bmiNumber < 18.5) {
-        let targetWeight = 18.5 * (currentHeight * currentHeight);
+        let targetWeight = (currentHeight**2) * (18.5 - bmiNumber);
         console.log("Increase your weight for better health! Your target is: " + targetWeight.toFixed(2) + "kg");
     } else if (bmiNumber > 24.9) {
-        let targetWeight = 24.9 * (currentHeight * currentHeight);
+        let targetWeight = (currentHeight**2) * (bmiNumber - 24.9);
         console.log("Decrease your weight for better health! Your target is: " + targetWeight.toFixed(2) + "kg");
     } else {
         console.log("No suggestion, keep doing your work!");
