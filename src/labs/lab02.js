@@ -26,13 +26,13 @@ function checkEvenOrOddNumber(number) {
     }
 }
 
-function giveSuggestion(bmiNumber, currentWeight) {
+function giveSuggestion(bmiNumber, currentHeight) {
     console.log("Suggestion for you:");
     if (bmiNumber < 18.5) {
-        let targetWeight = 18.5 * (currentWeight / bmiNumber);
+        let targetWeight = 18.5 * (currentHeight * currentHeight);
         console.log("Increase your weight for better health! Your target is: " + targetWeight.toFixed(2) + "kg");
     } else if (bmiNumber > 24.9) {
-        let targetWeight = 24.9 * (currentWeight / bmiNumber);
+        let targetWeight = 24.9 * (currentHeight * currentHeight);
         console.log("Decrease your weight for better health! Your target is: " + targetWeight.toFixed(2) + "kg");
     } else {
         console.log("No suggestion, keep doing your work!");
@@ -47,7 +47,7 @@ function main() {
     console.log("BMI is: " + bmi.toFixed(2));
     returnBMIStatus(bmi);
 
-    giveSuggestion(bmi, weight);
+    giveSuggestion(bmi, height);
 
     const number = parseInt(prompt("Enter a number: "));
     checkEvenOrOddNumber(number);
