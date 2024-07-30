@@ -1,6 +1,6 @@
 function countWords(input) {
     const wordsList = {};
-    let myArray = input.split(/\W+/);
+    let myArray = input.split(/\W+/); //can use replace(/,/gi, "").split(" ") instead
 
     console.log(myArray);
     for (let word of myArray) {
@@ -17,7 +17,8 @@ function countWords(input) {
 }
 
 function main() {
-    const inputStr = 'Hello ban, tui ten Teo, ban cung cung ten Teo luon ah';
+    const prompt = require('prompt-sync')({ sigint: true });
+    const inputStr = prompt('Please input your string: ');
     countWords(inputStr);
 }
 
