@@ -6,15 +6,11 @@
     "chai": "^5.1.1",
     "express": "^4.19.2",
     "mocha": "^10.7.3",
-    "nodemon": "^2.0.22",
     "prompt-sync": "^4.2.0",
-    "readline-sync": "^1.4.10",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
+    "readline-sync": "^1.4.10"
   },
   "name": "sdetpro_learning_js",
   "version": "1.0.0",
-  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "mocha --timeout=30000 --reporter allure-mocha"
@@ -22,5 +18,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
 }
