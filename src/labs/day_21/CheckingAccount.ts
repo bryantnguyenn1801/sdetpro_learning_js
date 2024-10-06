@@ -1,4 +1,6 @@
-class CheckingMoney extends BankingAccount {
+import { BankingAccount } from './BankingAccount';
+
+export class CheckingMoney extends BankingAccount {
     private overdraftLimit: number;
     private minimumLeft: number;
 

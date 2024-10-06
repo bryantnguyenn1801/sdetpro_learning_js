@@ -1,3 +1,6 @@
+import { CheckingMoney } from './CheckingAccount';
+import { SavingMoney } from './SavingMoney';
+
 const savingsAccount = new SavingMoney(500, 100);
 const checkingAccount = new CheckingMoney(300, 100);
 
@@ -7,8 +10,7 @@ savingsAccount.deposit(200);
 console.log('Balance after deposit:', savingsAccount.getBalance());
 savingsAccount.withdraw(400);
 console.log('Balance after withdraw:', savingsAccount.getBalance());
-savingsAccount.withdraw(300); 
-
+savingsAccount.withdraw(300);
 console.log('--- CheckingAccount ---');
 console.log('Initial balance:', checkingAccount.getBalance());
 checkingAccount.deposit(100);

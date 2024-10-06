@@ -1,4 +1,6 @@
-class SavingMoney extends BankingAccount {
+import { BankingAccount } from './BankingAccount';
+
+export class SavingMoney extends BankingAccount {
     private minimumBalance: number;
 
     constructor(initialBalance: number, minimumBalance: number) {
@@ -14,7 +16,7 @@ class SavingMoney extends BankingAccount {
         if (this.balance - amount >= this.minimumBalance) {
             this.balance -= amount;
         } else {
-            console.log(`[Error] Insufficient balance. Minimum balance required: ${this.minimumBalance}`);
+            console.log(`[Error] Can't withdraw. Minimum required balance is ${this.minimumBalance}`);
         }
     }
 

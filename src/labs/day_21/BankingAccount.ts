@@ -1,4 +1,4 @@
-abstract class BankingAccount {
+export abstract class BankingAccount {
     protected balance: number;
 
     constructor(initialBalance: number) {
